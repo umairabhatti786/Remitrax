@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Compressor_autolinked_build",
+		"source" : "/Users/mac/Documents/dorian_fruits_and_veg_app/node_modules/react-native-compressor/android/build/generated/source/codegen/jni"
+	}
+}
