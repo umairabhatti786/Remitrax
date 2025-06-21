@@ -44,8 +44,8 @@ const CustomDropDown = ({
       >
         <CustomText
             text={label}
-            fontWeight="400"
-            fontFam={fonts.Inter_Light}
+            fontWeight="700"
+            fontFam={fonts.PlusJakartaSans_Bold}
           />
       </View>
     )}
@@ -71,13 +71,13 @@ const CustomDropDown = ({
         placeholderStyle={{
           color: theme.colors.placeholder,
           fontSize: sizeHelper.calHp(21),
-          fontFamily: fonts.Inter_Regular,
+          fontFamily: fonts.PlusJakartaSans_Regular,
           fontWeight: "500",
         }}
         selectedTextStyle={{
           fontSize: sizeHelper.calHp(21),
           color: theme.colors.black,
-          fontFamily: fonts.Inter_Regular,
+          fontFamily: fonts.PlusJakartaSans_Regular,
           fontWeight: "500",
         }}
         renderRightIcon={renderRightIcon}

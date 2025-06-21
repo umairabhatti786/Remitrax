@@ -62,8 +62,9 @@ const CustomInput = ({
           }}>
           <CustomText
             text={label}
-            fontWeight="400"
-            fontFam={fonts.Inter_Light}
+            fontWeight="700"
+            size={23}
+            fontFam={fonts.PlusJakartaSans_Bold}
           />
         </View>
       )}
@@ -76,12 +77,26 @@ const CustomInput = ({
           paddingRight: sizeHelper.calWp(20),
           height: sizeHelper.calHp(height || 80),
           alignItems: "center",
-          borderColor: borderColor|| theme.colors.highlght,
+          borderColor: borderColor|| theme.colors.input_field_stroke,
+          gap:sizeHelper.calWp(10),
           borderWidth: 1,
           borderRadius: borderRadius || sizeHelper.calWp(15),
           backgroundColor: backgroundColor || theme.colors.Input_field,
         }}
       >
+        {
+          leftSource&&(
+            <Image
+            source={leftSource}
+            style={{
+              width: sizeHelper.calWp(40),
+              height: sizeHelper.calWp(40),
+            }}
+            resizeMode={"contain"}
+          />
+
+          )
+        }
         <TextInput
           value={value}
           editable={editable}
@@ -89,7 +104,7 @@ const CustomInput = ({
           allowFontScaling={false} // Disable font scaling
           style={{
             fontSize: sizeHelper.calHp(21),
-            width: rightSource ? "89%" : "98%",
+            width: rightSource ? "80%" : "98%",
             alignItems: "center",
             height: "100%",
             justifyContent: "center",
@@ -97,15 +112,15 @@ const CustomInput = ({
             textAlignVertical: textAlignVertical,
             paddingTop: paddingTop || 0,
             paddingVertical: 0, // Adjust as needed for centering
-            fontFamily: fonts.Inter_Regular,
+            fontFamily: fonts.PlusJakartaSans_Regular,
             fontWeight: fontWeight || "500",
             color: color || theme.colors.black,
             paddingRight: sizeHelper.calWp(rightSource ? 10 : 0),
           }}
-          placeholder={placeholder ||"Type here..."}
+          placeholder={placeholder}
           multiline={multiline}
           placeholderTextColor={
-            placeholderTextColor || theme.colors.placeholder
+            placeholderTextColor || theme.colors.gray
           }
           keyboardType={keyboard}
           maxLength={maxLength}
@@ -132,6 +147,7 @@ const CustomInput = ({
               style={{
                 width: sizeHelper.calWp(42),
                 height: sizeHelper.calWp(42),
+                tintColor:theme.colors.icon_gray
               }}
               resizeMode={"contain"}
             />

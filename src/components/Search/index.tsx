@@ -52,7 +52,6 @@ const CustomSearch = ({
           {
             ...styles.searchContainer,
 
-
             backgroundColor: backgroundColor || theme.colors.Input_field,
             height: sizeHelper.calHp(80),
             gap: sizeHelper.calWp(20),
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
     height: "100%",
     flex: 1,
     fontSize: sizeHelper.calHp(22),
-    fontFamily: fonts.Inter_Regular,
+    fontFamily: fonts.PlusJakartaSans_Regular,
     padding: 0,
     // backgroundColor: 'red',
   },

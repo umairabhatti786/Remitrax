@@ -105,36 +105,12 @@ export type ScreenType = {
 
 
 export type AppStackParamList = {
-  Onboarding: undefined;
-  LoginAndSignup:undefined
-  Login:undefined
-  Signup:undefined
-  BottomTab:undefined
-  AllProducts:undefined
-  SuccessScreen:undefined
-  EnterEmailScreen:undefined
-  TwoFAScreen:undefined
-  ForgotPassword:undefined
-  AboutUsScreen:undefined
-  TermAndCondition:undefined
-  NotificationScreen:undefined
-  SearchScreen:undefined
-  Splash:undefined
-  OrderHistoryScreen:undefined
-  OrderHistoryDetail:undefined
-  StudentBottomTab:undefined
-  NotificationsScreen:undefined
-  ProfileScreen:undefined
-  ChangePassword:undefined
-  NotificationSetting:undefined
-  EditProfileScreen:undefined
-  AIChatBoot:undefined
-  TierProgress:undefined
-  RewardsScreen:undefined
-  OnboardingScreen:undefined
-  UserType:undefined
-  CoachesStack:undefined
- 
+  GetStarted:undefined
+  LoginScreen:undefined
+  SignupScreen:undefined
+  YourIdentity:undefined
+  ProofOfResidency:undefined
+  PassportPhotoInstruction:undefined
 };
 
 

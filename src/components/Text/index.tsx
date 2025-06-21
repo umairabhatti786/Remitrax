@@ -23,7 +23,7 @@ const CustomText = ({
       color: color || theme.colors.black,
       fontSize: sizeHelper.calHp(size || 20),
       fontWeight: fontWeight || "500",
-      fontFamily: fontFam || fonts.Inter_Regular,
+      fontFamily: fontFam || fonts.PlusJakartaSans_Regular,
       textTransform,
       textDecorationLine,
       ...(lineHeight ? { lineHeight } : {}),
